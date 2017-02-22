@@ -120,77 +120,23 @@
             .symbol {
                 font-size: 30;
             }
-        }
-        
-        @media (max-width:1400px) {
-            .radioactivity {
-                height: 12px;
+            img.links {
+                display: none;
             }
         }
         
-        img {
-            margin-left: 2px;
+        img.links {
+            height: 40px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        
+        img.links:hover {
+            -webkit-filter: drop-shadow(3px 5px 5px #999);
+            filter: drop-shadow(3px 5px 5px #999);
         }
     </style>
-    <style>
-        /*VK*/
-        
-        a.ddottyt {
-            margin: 0 auto;
-            display: inline-block;
-            line-height: 50px;
-            height: 50px;
-            width: 150px;
-            overflow: hidden;
-            text-align: center;
-            text-decoration: none;
-            font-size: 20;
-            font-weight: bold;
-            text-shadow: 0 100px 0 #FFF, 1px 76px 10px #000;
-            color: #FFF;
-            background: #ff0000;
-            border-right: 2px solid #FFF;
-            border-left: 2px solid #FFF;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-        }
-        
-        a.ddottvk {
-            margin: 0 auto;
-            display: inline-block;
-            line-height: 50px;
-            height: 50px;
-            width: 150px;
-            overflow: hidden;
-            text-align: center;
-            text-decoration: none;
-            font-size: 20;
-            font-weight: bold;
-            text-shadow: 0 100px 0 #FFF, 1px 76px 10px #000;
-            color: #FFF;
-            background: #5D8EC7;
-            border-right: 2px solid #FFF;
-            border-left: 2px solid #FFF;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-        }
-        
-        a.ddottvk:hover {
-            text-shadow: 0 50px 0 #FFF, 1px 51px 20px #FFF;
-            background: #222;
-        }
-        
-        a.ddottyt:hover {
-            text-shadow: 0 50px 0 #FFF, 1px 51px 20px #FFF;
-            background: #222;
-        }
-    </style>
+
 </head>
 
 <body background="http://365psd.ru/images/backgrounds/light_wool.png">
@@ -206,11 +152,13 @@
             </td>
             <td class="tdinvisible"></td>
             <td colspan="10" rowspan="3" class="tdinvisible">
-                <p align="center"><img height=240 src="https://thoisoi.ru/wp-content/uploads/2017/02/thoisoiwhite-e1487675105227.png"></td>
+                <p align="center"><img height=160 src="https://thoisoi.ru/wp-content/uploads/2017/02/thoisoiwhite-e1487675105227.png"></td>
             <td colspan="5" class="tdinvisible">
                 <div align="center">
-                    <a href="https://vk.com/thoisoi" class="ddottvk">VK</a>
-                    <a href="https://www.youtube.com/channel/UCjAmQ-4NL3UZX0W_nmjn4_w" class="ddottyt">Youtube</a>
+                    <a href="https://www.youtube.com/user/Thoisoi" target="_blank"><img class="links" src="https://thoisoi.ru/wp-content/uploads/2017/02/yt2.png"></a>
+                    <a href="https://vk.com/thoisoi" target="_blank"><img class="links" src="https://thoisoi.ru/wp-content/uploads/2017/02/vk2.png"></a>
+                    <a href="https://www.instagram.com/thoisoi/" target="_blank"><img class="links" src="https://thoisoi.ru/wp-content/uploads/2017/02/insta2.png"></a>
+                    <a href="https://www.facebook.com/thoisoi2/" target="_blank"><img class="links" src="https://thoisoi.ru/wp-content/uploads/2017/02/fb2.png"></a>
                 </div>
             </td>
             <td class="cell noblegas novideo" title="Гелий" onclick="">
@@ -1266,5 +1214,25 @@
         </tr>
     </table>
 </body>
+<?php
+
+  if (file_exists('count.txt')) 
+  {
+    $fil = fopen('count.txt', r);
+    $dat = fread($fil, filesize('count.txt')); 
+    echo $dat+1;
+    fclose($fil);
+    $fil = fopen('count.txt', w);
+    fwrite($fil, $dat+1);
+  }
+
+  else
+  {
+    $fil = fopen('count.txt', w);
+    fwrite($fil, 1);
+    echo '1';
+    fclose($fil);
+  }
+?>
 
 </html>
