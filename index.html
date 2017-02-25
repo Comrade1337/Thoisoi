@@ -99,6 +99,15 @@
             text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 0px -5px 35px rgba(255, 255, 255, 0.4);
         }
         
+        .col {
+            height: 20;
+            font-size: 16;
+            text-align: center;
+            font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+            text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 0px -5px 35px rgba(255, 255, 255, 0.4);
+            vertical-align: bottom;
+        }
+        
         .radioactivity {
             position: absolute;
             height: 15px;
@@ -142,14 +151,7 @@
 <body background="http://365psd.ru/images/backgrounds/light_wool.png">
     <table>
         <tr>
-            <td class="cell alkali novideo" title="Водород" onclick="">
-                <div>
-                    <div class="number">1</div>
-                    <div class="symbol">H</div>
-                    <div class="name">Hydrogen</div>
-                    <div class="mass">1.008</div>
-                </div>
-            </td>
+            <td class="col">1</td>
             <td class="tdinvisible"></td>
             <td colspan="10" rowspan="3" class="tdinvisible">
                 <p align="center"><img height=160 src="https://thoisoi.ru/wp-content/uploads/2017/02/thoisoiwhite-e1487675105227.png"></td>
@@ -161,6 +163,23 @@
                     <a href="https://www.facebook.com/thoisoi2/" target="_blank"><img class="links" src="https://thoisoi.ru/wp-content/uploads/2017/02/fb2.png"></a>
                 </div>
             </td>
+            <td class="col">18</td>
+        </tr>
+        <tr>
+            <td class="cell alkali novideo" title="Водород" onclick="">
+                <div>
+                    <div class="number">1</div>
+                    <div class="symbol">H</div>
+                    <div class="name">Hydrogen</div>
+                    <div class="mass">1.008</div>
+                </div>
+            </td>
+            <td class="col">2</td>
+            <td class="col">13</td>
+            <td class="col">14</td>
+            <td class="col">15</td>
+            <td class="col">16</td>
+            <td class="col">17</td>
             <td class="cell noblegas novideo" title="Гелий" onclick="">
                 <div>
                     <div class="number">2</div>
@@ -253,6 +272,16 @@
                     <div class="mass">24.305</div>
                 </div>
             </td>
+            <td class="col">3</td>
+            <td class="col">4</td>
+            <td class="col">5</td>
+            <td class="col">6</td>
+            <td class="col">7</td>
+            <td class="col">8</td>
+            <td class="col">9</td>
+            <td class="col">10</td>
+            <td class="col">11</td>
+            <td class="col">12</td>
             <td class="cell basicmetal novideo" title="Алюминий" onclick="">
                 <div>
                     <div class="number">13</div>
@@ -1213,7 +1242,49 @@
             </td>
         </tr>
     </table>
+
+    <!-- Yandex.Metrika informer -->
+    <div align="center">
+        <a href="https://metrika.yandex.ru/stat/?id=43032224&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/43032224/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer"
+                data-cid="43032224" data-lang="ru" /></a>
+    </div>
+    <!-- /Yandex.Metrika informer -->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter43032224 = new Ya.Metrika({
+                        id: 43032224,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true
+                    });
+                } catch (e) {}
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/43032224" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
 </body>
+<!--
 <?php
 
   if (file_exists('count.txt')) 
@@ -1234,5 +1305,6 @@
     fclose($fil);
   }
 ?>
+-->
 
 </html>
