@@ -1,0 +1,121 @@
+/*   
+Theme Name: table
+Theme URI: https://thoisoi.ru
+Description: https://thoisoi.ru
+Author: https://thoisoi.ru
+Author URI: https://thoisoi.ru
+*/
+
+table {
+    margin: auto;
+}
+
+table td {
+    height: 80;
+    width: 80;
+    padding: 0;
+    text-shadow: 0 0 50px #fff;
+}
+
+.video:hover {
+    box-shadow: inset 0 0 100px #a357eb;
+    cursor: pointer;
+}
+
+.novideo {
+    background-image: repeating-linear-gradient( 135deg, #ddd, #ddd 5px, #fff 5px, #fff 10px);
+}
+
+.tdinvisible {
+    border: 0px;
+}
+
+.alkali {
+    box-shadow: inset 0 0 50px #ff859a;
+}
+
+.alkaline {
+    box-shadow: inset 0 0 50px #ffc99c;
+}
+
+.transmetal {
+    box-shadow: inset 0 0 50px #f4f487;
+}
+
+.basicmetal {
+    box-shadow: inset 0 0 50px #caefd2;
+}
+
+.semimetal {
+    box-shadow: inset 0 0 50px #7fe3ff;
+}
+
+.nonmetal {
+    box-shadow: inset 0 0 50px #98b5db;
+}
+
+.halogen {
+    box-shadow: inset 0 0 50px #bdbbe4;
+}
+
+.noblegas {
+    box-shadow: inset 0 0 50px #bca5d7;
+}
+
+.lanthanide {
+    box-shadow: inset 0 0 50px #92807b;
+}
+
+.actinide {
+    box-shadow: inset 0 0 50px #b59188;
+}
+
+.number {
+    font-size: 11;
+    margin-left: 5;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+}
+
+.symbol {
+    font-size: 25;
+    text-align: center;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 0px -5px 35px rgba(255, 255, 255, 0.4);
+}
+
+.name {
+    font-size: 12;
+    text-align: center;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+}
+
+.mass {
+    font-size: 11;
+    text-align: center;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+}
+
+.group {
+    font-size: 14;
+    text-align: center;
+    font-family: 'Century Gothic', Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 0px -5px 35px rgba(255, 255, 255, 0.4);
+}
+
+.radioactivity {
+    position: absolute;
+    margin-left: 60px;
+    height: 15px;
+}
+
+@media (max-width:1000px) {
+    .number {
+        display: none;
+    }
+    .name {
+        display: none;
+    }
+    .mass {
+        display: none;
+    }
+}
